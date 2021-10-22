@@ -1,0 +1,33 @@
+{
+  "name": "wefabric/cart",
+  "description": "Cart",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Leo Flapper",
+      "email": "leo@wefabric.nl"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.1|8.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wefabric\\Cart\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Wefabric\\Cart\\CartServiceProvider"
+      ],
+      "aliases": {
+        "Cart": "Wefabric\\Cart\\ShoppingCartFacade"
+      }
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
