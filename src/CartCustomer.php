@@ -9,7 +9,7 @@
 namespace Wefabric\Cart;
 
 
-use Alfana\Laravel\Countries\Countries\CountryInterface;
+use Wefabric\Countries\Countries\CountryInterface;
 
 class CartCustomer
 {

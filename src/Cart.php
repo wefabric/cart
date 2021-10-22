@@ -2,8 +2,8 @@
 
 namespace Wefabric\Cart;
 
-use Alfana\Laravel\Countries\Countries\CountryInterface;
-use Alfana\Laravel\Countries\Address;
+use Wefabric\Countries\Countries\CountryInterface;
+use Wefabric\Countries\Address;
 use Wefabric\Cart\Exceptions\CartException;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
@@ -374,7 +374,7 @@ class Cart implements Arrayable, Jsonable
                 $result = 0 - $result;
             }
         }
-        
+
         return $result;
     }
 
