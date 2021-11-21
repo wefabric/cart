@@ -163,6 +163,11 @@ class Fee implements Arrayable, FeeInterface
         return $this->title;
     }
 
+    public function getLabel(): string
+    {
+        return $this->getTitle();
+    }
+
     /**
      * @param string $title
      */
