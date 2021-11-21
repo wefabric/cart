@@ -503,7 +503,6 @@ class Cart implements Arrayable, Jsonable
             }
 
             $this->discount = null;
-            $this->save();
         }
     }
 
