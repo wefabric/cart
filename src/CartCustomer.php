@@ -130,6 +130,17 @@ class CartCustomer
     {
         $this->country = $country;
     }
+    
+    public function toArray()
+    {
+        return [
+            'name' => $this->getName(),
+            'email' => $this->getEmail(),
+            'user_id' => $this->getUserId(),
+            'title' => $this->getTitle(),
+            'message' => $this->getMessage()
+        ];
+    }
 
 
 }
